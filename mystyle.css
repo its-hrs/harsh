@@ -380,3 +380,178 @@ td {
   height: 100vh;
   background-color: black;
 }
+
+.container .icon{
+  display:none;
+}
+
+/* **************************** Responsiveness ************************* */
+
+@media only screen and (max-width:600px){
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .container2 img{
+    width: 225px!important;
+    height: 115px;
+  }
+
+  .container3 p{
+    width: 86%;
+    line-height: 15px;
+
+  }
+
+  #profile-img{
+    margin-right: 15%;
+    height: 28vh;
+  }
+
+  .mob2{
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .card{
+    display: inline-block;
+    margin: 30% auto;
+  }
+
+  #logo{
+    height: 110px;
+
+  }
+
+  .name{
+    position: absolute;
+    left: 55px;
+    bottom: 50px;
+    font-size: 4em;
+  }
+
+  .nav-contact a{
+    display: block;
+    margin: 15px 0;
+  }
+
+  .mobfb{
+    margin: 65px 0px 0 0!important;
+  }
+
+  #downarw{
+    display:none;
+  }
+
+  tr{
+    line-height: 45px;
+  }
+ .container4{
+   display: flex;
+   flex-direction: column-reverse;
+   height: 130vh;
+   background-color: rgb(63, 57, 57);
+ }
+
+ .hobcont{
+   width: 85%;
+   height: 50vh;
+ }
+
+ .hobcont img{
+   width: 85%;
+ }
+
+  .mob3{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container3 img{
+    width: 100px;
+    border-radius: 100px;
+  }
+
+  .container3{
+    font-size: 8px;
+    height: 40vh;
+  }
+
+  .container3 h1{
+    font-size: 24px;
+  }
+
+  .potter{
+    color: black;
+    background-color: white;
+  }
+
+  .container3 a{
+    font-size: 13px;
+  }
+
+  .container5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact{
+    font-size: 14px;
+  }
+
+  .forms{
+   width: 90%; 
+  }
+
+  .forms input{
+    width: 120px;
+    margin-left: 5%;
+  }
+
+  #mobsub{
+    width:85%!important;
+  }
+
+  .forms textarea{
+    width: 90%;
+    margin-left: 6%!important;
+
+  }
+
+  #down{
+    margin-left: 15%;
+    font-size: 14px;
+  }
+
+  a{text-decoration: none;}
+
+  .container .icon {
+    display: none;
+  }
+
+  .container a {display: none;}
+   .container a.icon {
+      float: right;
+      display: block;
+      position: absolute;
+      right: -230px;
+    }
+  
+    .container.responsive {position: relative;}
+    .container.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .container.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
