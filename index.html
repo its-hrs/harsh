@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mr HRS</title>
-    <link rel="icon" href="./img/logo1.jpg" type="image/x-icon type">
+    <link rel="icon" href="/img/logo1.jpg" type="image/x-icon type">
     <link rel="stylesheet" href="mystyle.css" />
     
   </head>
   <body>
     <div class="bg-img" id="particles-js">
-      <div class="container">
+      <div class="container" id="myTopnav">
         <img id="logo" src="./img/logo2.png" style="width: 125px"/>
         <div class="topnav">  
-            <a href="#about">About</a>
+          <a href="#about">About</a>
           <a href="#hob">Hobbies</a>
           <a href="#explore">Explore</a>
           <a href="#contact">Contact Us</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
         <div class="name">Harsh</div>
       </div>
       
       <div class="nav-contact">
-        <a href="https://www.facebook.com/PotterHead9347" target="_blank"><i style="padding: 8px;"  class="fab fa-facebook fa-lg" id="fb"></i></a>
+        <a class="mobfb" href="https://www.facebook.com/PotterHead9347" target="_blank"><i style="padding: 8px;"  class="fab fa-facebook fa-lg" id="fb"></i></a>
        <a href="https://www.linkedin.com/in/harsh-saxena-8a9429178/" target="_blank"><i style="padding: 8px;" class="fab fa-linkedin fa-lg" id="linkedin"></i></a>
        <a href="https://github.com/its-hrs" target="_blank"><i style="padding: 8px;" class="fab fa-github fa-lg"></i></a>
       </div>
@@ -33,7 +36,7 @@
     <div id="about" class="container2">
       <h2 style="background-color: #002132;">ABOUT</h2>
       <hr />
-      <div class="container2 flex-box">
+      <div class="container2 flex-box mob2">
         <div class="card">
           <a href="https://github.com/its-hrs" target="_blank" id="name1"><h1>Harsh Saxena</h1></a>
           <table>
@@ -55,12 +58,14 @@
             </tr>
           </table>
         </div>
+      
         <img src="img/profile.jpg" alt="profile img" id="profile-img"/>
+        
       </div>
       <br />
       <br />
       
-      <div class="container2 flex-box">
+      <div class="container2 flex-box mob2">
         <div class="card">
           <h1 id="name1">Course Detail</h1>
           <table style="font-size: 12.5px">
@@ -82,7 +87,7 @@
             </tr>
           </table>
         </div>
-        <img src="img/gif2.gif" alt="course img" style="width: 90vh; clip-path: ellipse()"/>
+        <img src="img/gif2.gif" alt="courseimg" id="mobimg" style="width: 90vh; clip-path: ellipse()"/>
       </div>
     </div>
 
@@ -101,9 +106,9 @@
         </div>
     </div>
 
-    <div class="container2">
+    <div class="container2 mob3">
       <h2 id="explore" style="background-color: #002132;">Explore</h2><hr>
-      <div class="flex-box2 container3">
+      <div class="flex-box2 container3 potter">
         <img src="img/wimg2.png" alt="coding"/>
         <div><h1>Hey Potterheads !</h1><br><p>Head towards the link to our Instagram Page having lots of glimpses of Potter World just made for potterheads. Hope you'll all love it and do support us guys if you like it.</p><br>
           <a href="https://www.instagram.com/p.o.t.t.e.r_w.o.r.l.d/" target="_blank"></h2>Way to Insta </h2><i class="fab fa-instagram"></i></a>
@@ -163,7 +168,7 @@
     <p>Hey ,it's always a pleasure to sort your queries and to interact with you guys. Don’t hesitate to get in touch with any questions regarding our portfolio, events or anything else.</p>
     <address>Anand Puram Colony, Shahjahanpur, Uttar Pradesh, India</address>
   <a href="mailto: harsh27725@gmail.com"  target="_blank"><i style="padding: 8px;" class="fas fa-paper-plane fa-lg" id="mail"></i>harsh27725@gmail.com</a><br />
-  <i class="fas fa-phone-alt fa-lg" id="phone"></i> Phone No.:123-456-678<br />
+  <a href="tel:+917355217856"><i class="fas fa-phone-alt fa-lg" id="phone"></i>123-456-678</a><br />
 
   <a href="https://www.facebook.com/PotterHead9347" target="_blank"><i style="padding: 3px;"  class="fab fa-facebook fa-lg" id="fb" ></i></a>
   <a href="https://www.instagram.com/_its_hrs/" target="_blank"><i style="padding: 3px;" class="fab fa-instagram fa-lg" id="insta"></i></a>
@@ -179,7 +184,7 @@
       <input type="text" placeholder="E-mail"><br>
       <input type="text" placeholder="Mobie No.">
       <input type="text" placeholder="Address"><br>
-      <input style="width:92%" type="text" placeholder="Subject...."><br>
+      <input style="width:92%" type="text" placeholder="Subject...." id="mobsub"><br>
       <textarea  cols="53" rows="7" placeholder="Type your message here..." style="margin:6px;"></textarea><br>
       <input type="button" id="btn" value="Submit" onclick="alert('Your message is recieved Successfully!')">
     </form>
@@ -237,6 +242,15 @@
     
     <script text="text/javascript" src="particles.js"></script>
     <script text="text/javascript" src="app.js"></script>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "container") {
+        x.className += " responsive";
+      } else {
+        x.className = "container";
+      }
+    }</script>
   
   </body>
   </html>
