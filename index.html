@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mr HRS</title>
-    <link rel="icon" href="/img/logo1.jpg" type="image/x-icon type">
+    <title>its-HRS</title>
+    <link rel="icon" href="./img/logo1.jpg" type="image/x-icon type">
     <link rel="stylesheet" href="mystyle.css" />
     
   </head>
@@ -37,24 +37,23 @@
       <h2 style="background-color: #002132;">ABOUT</h2>
       <hr />
       <div class="container2 flex-box mob2">
-        <div class="card">
-          <a href="https://github.com/its-hrs" target="_blank" id="name1"><h1>Harsh Saxena</h1></a>
-          <table>
+        <div class="card interest">
+          <a href="https://github.com/its-hrs" target="_blank" id="name1"><h1>Interests</h1></a>
+          <table class="interest">
             <tr> 
-              <th>D.O.B</th>
-              <td>April 03, 2001</td>
+              <th>Web Development</th>
             </tr>
             <tr>
-              <th>Gender</th>
-              <td>Male</td>
+              <th>C++</th>
             </tr>
             <tr>
-              <th>Designation</th>
-              <td>Student</td>
+              <th>Git/GitHub</th>
             </tr>
             <tr>
-              <th>Roll No.</th>
-              <td>19/19011</td>
+              <th>Python</th>
+            </tr>
+            <tr>
+              <th>Machine Learning</th>
             </tr>
           </table>
         </div>
@@ -71,7 +70,7 @@
           <table style="font-size: 12.5px">
             <tr>
               <th>Course</th>
-              <td>B.Sc.(H) Computer Science 03, 2001</td>
+              <td>Computer Science(H)</td>
             </tr>
             <tr>
               <th>Semester</th>
@@ -186,21 +185,43 @@
       <input type="text" placeholder="Address"><br>
       <input style="width:92%" type="text" placeholder="Subject...." id="mobsub"><br>
       <textarea  cols="53" rows="7" placeholder="Type your message here..." style="margin:6px;"></textarea><br>
-      <input type="button" id="btn" value="Submit" onclick="alert('Your message is recieved Successfully!')">
+      <input type="button" id="btn" value="Submit" onclick="alert('Your message is received Successfully!')">
     </form>
   </div>
   
 </div>
 
 <hr />
+<div>
+  <i class="fas fa-arrow-circle-up"  onclick="topFunction()" id="topbtn" > </i> 
+</div>
     <div style="text-align: center; margin-top: 5px; font-family: Josefin Sans" id="down">
-      <a style="float: right; font-size: 7vh; margin-right: 15px; color:black" href="#logo"><i class="fas fa-arrow-circle-up"></i></a>
       &copy; Harsh Saxena, 2021<br />All Rights Reserved.
     </div>
     <br>
     <hr />
     
     <script src="https://kit.fontawesome.com/aba415448e.js" crossorigin="anonymous"></script>
+   
+   <script>
+      btn = document.getElementById("topbtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        btn.style.display = "block";
+        } else {
+        btn.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+
     <script>
       var slideIndex = 1;
       showSlides(slideIndex);
