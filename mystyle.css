@@ -403,7 +403,7 @@ td {
   bottom: 2px; 
   right: 5px; 
   z-index: 99; /* Make sure it does not overlap */
-  color:black;
+  color: rgb(253, 18, 18);
   font-size: 2.5rem;
   cursor: pointer;
   padding: 10px; 
