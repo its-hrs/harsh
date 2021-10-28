@@ -11,7 +11,7 @@ html {
 }
 
 .bg-img {
-  background-image: url(./img/bg2.jpg);
+  background-image: url(/img/bg2.jpg);
   min-height: 654px;
 
   background-position: center;
@@ -179,7 +179,7 @@ table {
   border-collapse: collapse;
   height: 25vw;
   text-align: left;
-  font-size: 1rem!important;
+  font-size: 1.1rem!important;
   font-family: "Ubuntu";
 }
 
@@ -495,6 +495,7 @@ td {
   tr{
     line-height: 45px;
   }
+
  .container4{
    display: flex;
    flex-direction: column-reverse;
@@ -560,11 +561,11 @@ td {
   }
 
   #mobsub{
-    width:85%!important;
+    width:86%!important;
   }
 
   .forms textarea{
-    width: 90%;
+    width: 91%;
     margin-left: 6%!important;
 
   }
@@ -600,13 +601,22 @@ td {
       text-align: left;
     }
 
-    #btn{
-      margin: 4px 28px;
+    #contact{
       width: 85%;
+      margin-left: 6%;
+    }
+
+    #btn{
+      margin: 4px 22px;
+      width: 90%;
       border-radius: 10px;
     }
 
     #topbtn{
-      right: 25px;
+      right: 10px;
+    }
+
+    .slidecont{
+      font-size: 20px;
     }
 }
