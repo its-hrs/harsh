@@ -603,12 +603,12 @@ td {
 
     #contact{
       width: 85%;
-      margin-left: 6%;
+      margin-left: 0%;
     }
 
     #btn{
-      margin: 4px 22px;
-      width: 90%;
+      margin: 4px 24px;
+      width: 85%;
       border-radius: 10px;
     }
 
