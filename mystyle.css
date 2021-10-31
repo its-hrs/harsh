@@ -476,10 +476,6 @@ td {
     height: 85px;
     margin-left: 15px;
   }
-  
-  #titlelogo{
-    filter: invert();
-  }
 
   .name{
     position: absolute;
