@@ -397,6 +397,16 @@ td {
   display:none;
 }
 
+#logo{
+  width: 80px;
+         height: 75px;
+         filter: invert();
+         position: absolute;
+         top: 10px;
+         left: 20px;
+         filter: invert();
+}
+
 #topbtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
