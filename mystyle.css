@@ -340,6 +340,12 @@ td {
   border-collapse: collapse;
 }
 
+#down{
+  background-color: #002132;
+  padding: 10px;
+  color: white;
+}
+
 #fb:hover {
   color: blue;
 }
@@ -579,8 +585,8 @@ td {
 
   }
 
-  #down{
-    margin-left: 4%;
+ #down{
+    width: 100%;
   }
 
   a{text-decoration: none;}
