@@ -56,6 +56,10 @@ html {
   color: whitesmoke;
 }
 
+.nav-contact i:hover{
+  color: grey;
+}
+
 .topnav a {
   float: left;
   color: #f2f2f2;
