@@ -485,9 +485,9 @@ td {
 
   .name{
     position: absolute;
-    left: 73px;
+    left: 88%;
     bottom: 50px;
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .nav-contact a{
