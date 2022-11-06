@@ -71,11 +71,11 @@ html {
 .name {
   position: absolute;
   font-family: "WindSong";
-  color: rgb(255, 0, 0);
+  color: rgb(255 247 0);
   font-size: 60px;
   top: 520px;
   left: 550px;
-  text-shadow: 2px 2px 5px rgb(255, 7, 7)
+  text-shadow: 2px 2px 5px rgb(194 255 7);
 }
 
 #name1{
